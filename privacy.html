@@ -28,9 +28,10 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <tr><td>녹음 음성</td><td>이용자가 직접 녹음한 15초 이내 음성 파일</td><td>받는 사람의 알람 소리로 재생</td></tr>
 <tr><td>기기 정보</td><td>푸시 알림 토큰, 운영체제 종류·주버전, 앱 식별자</td><td>알람 푸시 전달, 기기별 알람 방식 선택</td></tr>
 <tr><td>신고·차단</td><td>신고한 사람·대상, 신고 사유, 관련 깨우기, 차단 관계</td><td>괴롭힘 방지, 신고 처리</td></tr>
+<tr><td>문의</td><td>문의 내용, 이름(닉네임), 앱 버전·기기 종류, 이용자가 답변을 받으려고 직접 적은 이메일(선택)</td><td>문의 확인과 답변</td></tr>
 <tr><td>보안·오류</td><td>초대 코드 입력 실패 시각, 오류 진단 기록</td><td>무차별 입력 차단, 오류 수정</td></tr>
 </table>
-<p>전화번호, 이메일, 위치, 연락처, 광고 식별자는 수집하지 않습니다. 마이크는 이용자가 녹음 버튼을 누를 때만 사용합니다.</p>
+<p>전화번호, 위치, 연락처, 광고 식별자는 수집하지 않습니다. 이메일은 문의할 때 답변을 받으려고 이용자가 직접 적은 경우에만 처리합니다. 마이크는 이용자가 녹음 버튼을 누를 때만 사용합니다.</p>
 
 <h2>2. 보유 기간과 파기</h2>
 <table>
@@ -40,6 +41,7 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <tr><td>초대 코드 입력 실패 기록</td><td>1일 후 삭제</td></tr>
 <tr><td>오류 진단 기록</td><td>30일 후 삭제</td></tr>
 <tr><td>신고 기록</td><td>처리 완료 후 1년 (분쟁 대응). 이후 삭제</td></tr>
+<tr><td>문의</td><td>접수 후 <b>1년</b>이 지나면 삭제. 계정을 삭제하면 계정과의 연결이 끊깁니다</td></tr>
 </table>
 <p>전자 파일은 복구할 수 없는 방법으로 삭제합니다. 종이 문서로는 보관하지 않습니다.</p>
 
@@ -107,7 +109,7 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <li><b>Device</b>: push token, OS type and major version, app identifier, to deliver alarms.</li>
 <li><b>Reports and blocks</b>, failed invite-code attempts, and error diagnostics, for safety and fixing bugs.</li>
 </ul>
-<p>We do not collect phone numbers, email, location, contacts, or advertising IDs. The microphone is used only while you record.</p>
+<p>We do not collect phone numbers, location, contacts, or advertising IDs. Email is processed only if you type it into an in-app inquiry to get a reply (inquiries are deleted after 1 year). The microphone is used only while you record.</p>
 <h3>Retention</h3>
 <p>Tap <b>Settings → Delete my data and leave</b> to delete your account data immediately. Voice recordings are deleted automatically 7 days after sending. Failed invite attempts are kept 1 day, error diagnostics 30 days, and resolved reports 1 year.</p>
 <h3>Sharing and processors</h3>
