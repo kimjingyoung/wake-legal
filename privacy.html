@@ -22,6 +22,7 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <table>
 <tr><th>구분</th><th>항목</th><th>목적</th></tr>
 <tr><td>계정</td><td>앱이 자동으로 만드는 익명 계정 식별자, 이름(닉네임), 프로필 색</td><td>이용자 구분, 그룹 친구에게 이름 표시</td></tr>
+<tr><td>계정 연결 (선택)</td><td>Apple 계정 연결을 선택한 경우: Apple이 전달하는 계정 식별자와 이메일(이메일 가리기를 고르면 Apple의 중계 주소)</td><td>폰을 바꾸거나 앱을 다시 설치해도 같은 계정을 되찾기 위함</td></tr>
 <tr><td>설정</td><td>'나 깨워도 됨' 여부, 허용 시간대, 알람음 선택</td><td>허용한 시간에만 깨우기 전달</td></tr>
 <tr><td>그룹</td><td>참여한 그룹, 그룹 이름·색, 초대 코드, 깨우기 허용 관계</td><td>그룹 운영, 서로 깨울 수 있는 사람 확인</td></tr>
 <tr><td>깨우기 기록</td><td>보낸 사람·받는 사람, 보낸 시각, 울린 시각, 일어난 시각, 상태, 다시 알림(5분만) 횟수</td><td>알람 전달·결과 표시, 순위 화면</td></tr>
@@ -31,7 +32,7 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <tr><td>문의</td><td>문의 내용, 이름(닉네임), 앱 버전·기기 종류, 이용자가 답변을 받으려고 직접 적은 이메일(선택)</td><td>문의 확인과 답변</td></tr>
 <tr><td>보안·오류</td><td>초대 코드 입력 실패 시각, 오류 진단 기록</td><td>무차별 입력 차단, 오류 수정</td></tr>
 </table>
-<p>전화번호, 위치, 연락처, 광고 식별자는 수집하지 않습니다. 이메일은 문의할 때 답변을 받으려고 이용자가 직접 적은 경우에만 처리합니다. 마이크는 이용자가 녹음 버튼을 누를 때만 사용합니다.</p>
+<p>전화번호, 위치, 연락처, 광고 식별자는 수집하지 않습니다. 이메일은 이용자가 계정 연결을 선택했거나, 문의할 때 답변을 받으려고 직접 적은 경우에만 처리합니다. 마이크는 이용자가 녹음 버튼을 누를 때만 사용합니다.</p>
 
 <h2>2. 보유 기간과 파기</h2>
 <table>
@@ -109,7 +110,7 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <li><b>Device</b>: push token, OS type and major version, app identifier, to deliver alarms.</li>
 <li><b>Reports and blocks</b>, failed invite-code attempts, and error diagnostics, for safety and fixing bugs.</li>
 </ul>
-<p>We do not collect phone numbers, location, contacts, or advertising IDs. Email is processed only if you type it into an in-app inquiry to get a reply (inquiries are deleted after 1 year). The microphone is used only while you record.</p>
+<p>We do not collect phone numbers, location, contacts, or advertising IDs. Email is processed only if you choose to link your Apple ID (Apple may provide a relay address) or type it into an in-app inquiry to get a reply (inquiries are deleted after 1 year). The microphone is used only while you record.</p>
 <h3>Retention</h3>
 <p>Tap <b>Settings → Delete my data and leave</b> to delete your account data immediately. Voice recordings are deleted automatically 7 days after sending. Failed invite attempts are kept 1 day, error diagnostics 30 days, and resolved reports 1 year.</p>
 <h3>Sharing and processors</h3>
