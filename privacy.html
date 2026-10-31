@@ -22,7 +22,7 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <table>
 <tr><th>구분</th><th>항목</th><th>목적</th></tr>
 <tr><td>계정</td><td>앱이 자동으로 만드는 익명 계정 식별자, 이름(닉네임), 프로필 색</td><td>이용자 구분, 그룹 친구에게 이름 표시</td></tr>
-<tr><td>계정 연결 (선택)</td><td>Apple 계정 연결을 선택한 경우: Apple이 전달하는 계정 식별자와 이메일(이메일 가리기를 고르면 Apple의 중계 주소)</td><td>폰을 바꾸거나 앱을 다시 설치해도 같은 계정을 되찾기 위함</td></tr>
+<tr><td>계정 연결 (선택)</td><td>Apple 또는 Google 계정 연결을 선택한 경우: 그 회사가 전달하는 계정 식별자와 이메일(Apple에서 이메일 가리기를 고르면 Apple의 중계 주소). Google은 이름·프로필 사진 주소도 함께 전달하지만 앱에서 쓰지 않습니다</td><td>폰을 바꾸거나 앱을 다시 설치해도 같은 계정을 되찾기 위함</td></tr>
 <tr><td>설정</td><td>'나 깨워도 됨' 여부, 허용 시간대, 알람음 선택, 내 알람(시각·요일·이름·알람음·미션 난이도)</td><td>허용한 시간에만 깨우기 전달, 폰을 바꿔도 내 알람 유지</td></tr>
 <tr><td>그룹</td><td>참여한 그룹, 그룹 이름·색, 초대 코드, 깨우기 허용 관계</td><td>그룹 운영, 서로 깨울 수 있는 사람 확인</td></tr>
 <tr><td>깨우기 기록</td><td>보낸 사람·받는 사람, 보낸 시각, 울린 시각, 일어난 시각, 상태, 다시 알림(5분만) 횟수</td><td>알람 전달·결과 표시, 순위 화면</td></tr>
@@ -110,7 +110,7 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <p>내용이 바뀌면 시행 7일 전에 이 페이지와 앱으로 알립니다. 이용자에게 불리한 변경은 30일 전에 알립니다.</p>
 <ul>
 <li>2026년 9월 29일 공고: 녹음 보관 7일 → 30일(다시 듣기·보관함 담기는 Wake+ 2주까지 — 보관 기간 연장은 공고 30일 뒤부터 적용), 계정 삭제 시 녹음 2일 이내 삭제, 내 알람을 계정에 저장, 구매·이용권, 무료 혜택 기록 항목 추가, 기기 정보에 이 앱 전용 기기 식별값 명시, 녹음 길이 변경(10초·무료 3초). 추가 항목은 Wake+ 판매와 무료 이용 한도가 시작되는 날부터 적용합니다.</li>
-<li>2026년 10월 31일 공고: 깨우기 처리 기록(상태가 바뀐 시각·바꾼 쪽·푸시 전달 결과, 30일 보관)과 문의 진단(선택 — 문의할 때 직접 켠 경우에만 최근 7일 알람 동작 기록을 함께 보냄, 30일 보관), 기기 시간대(폰의 시간대 이름 최신 값 하나, 알람 시각 계산용, 계정 삭제 시 삭제), 영상에서 가져온 소리와 함께 보내는 장면 사진(녹음과 같은 기간 보관)·소리 없는 짧은 영상 조각(받는 폰이 받으면 곧 삭제, 최대 24시간) 항목 추가. 추가 항목은 공고 7일 뒤인 2026년 11월 7일부터 적용합니다.</li>
+<li>2026년 10월 31일 공고: 깨우기 처리 기록(상태가 바뀐 시각·바꾼 쪽·푸시 전달 결과, 30일 보관)과 문의 진단(선택 — 문의할 때 직접 켠 경우에만 최근 7일 알람 동작 기록을 함께 보냄, 30일 보관), 기기 시간대(폰의 시간대 이름 최신 값 하나, 알람 시각 계산용, 계정 삭제 시 삭제), 영상에서 가져온 소리와 함께 보내는 장면 사진(녹음과 같은 기간 보관)·소리 없는 짧은 영상 조각(받는 폰이 받으면 곧 삭제, 최대 24시간) 항목 추가. 추가 항목은 공고 7일 뒤인 2026년 11월 7일부터 적용합니다. Google 계정 연결(선택) 항목 추가.</li>
 </ul>
 
 <h2 id="en">Privacy Policy (English)</h2>
@@ -130,8 +130,8 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <li><b>Reports and blocks</b>, failed invite-code attempts, and error diagnostics, for safety and fixing bugs.</li>
 <li><b>Inquiry diagnostics (optional)</b>: only if you switch it on yourself while contacting us in the app: the last 7 days of alarm activity records from your phone (when alarms were set, rang, or stopped, and what kind of action it was), plus basic app and phone information. No names and no recordings. If you leave it off, these records stay on your phone (last 7 days, up to 200 entries) and are never sent to us.</li>
 </ul>
-<p>Added October 31, 2026: the wake processing record and inquiry diagnostics, the device time zone, and the still photo or short silent video clip that can accompany audio imported from a video. They apply from November 7, 2026 (7 days after this notice).</p>
-<p>We do not collect phone numbers, location (GPS or place data), contacts, or advertising IDs; the time zone above is only the name your phone reports. Email is processed only if you choose to link your Apple ID (Apple may provide a relay address) or type it into an in-app inquiry to get a reply (inquiries are deleted after 1 year). The microphone is used only while you record.</p>
+<p>Added October 31, 2026: optional Google account linking, the wake processing record and inquiry diagnostics, the device time zone, and the still photo or short silent video clip that can accompany audio imported from a video. They apply from November 7, 2026 (7 days after this notice).</p>
+<p>We do not collect phone numbers, location (GPS or place data), contacts, or advertising IDs; the time zone above is only the name your phone reports. Email is processed only if you choose to link your Apple ID (Apple may provide a relay address) or Google account (Google also sends your name and profile photo address, which we don't use) or type it into an in-app inquiry to get a reply (inquiries are deleted after 1 year). The microphone is used only while you record.</p>
 <h3>Retention</h3>
 <p>Tap <b>Settings → Delete my data and leave</b> to delete your account data immediately. Photos sent with a recording follow the same schedule as the recording. Your time zone is kept only while your account exists. After a recording rings as the receiver's alarm, Wake+ members can replay it or save it to their library for 2 weeks; after that it is kept only for handling reports and disputes and is permanently deleted from our servers 30 days after sending (recordings under an open report are kept until it is resolved, recordings used by an active repeat alarm until it is turned off, and recordings you save to your library until you delete them). If you delete your account, your recordings are deleted within 2 days. Failed invite attempts are kept 1 day, error diagnostics 30 days, wake processing records 30 days (or until you delete the wake or your account), inquiry diagnostics 30 days after we receive the inquiry (the inquiry text itself is kept 1 year), and resolved reports 1 year. Free-plan usage records are kept while your account exists; after you delete your account they are unlinked from it immediately and kept for up to 1 year from use, so the same phone cannot claim the free voice wakes again.</p>
 <h3>Sharing and processors</h3>
