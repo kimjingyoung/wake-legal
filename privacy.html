@@ -11,7 +11,7 @@
 <a class="logo" href="./">Wake</a>
 <span class="lang"><a href="#en">English</a></span>
 <h1>개인정보처리방침</h1>
-<div class="meta">시행일 2026년 9월 18일 · 개정 공고 2026년 10월 31일 · 운영자 PAPE</div>
+<div class="meta">시행일 2026년 9월 18일 · 개정 공고 2026년 10월 31일 · 운영자 PAPE · 최근 수정 2026년 11월 3일</div>
 
 <div class="box">
 Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없이 이름만으로 시작하며, 서비스에 꼭 필요한 정보만 처리합니다.
@@ -22,33 +22,36 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <table>
 <tr><th>구분</th><th>항목</th><th>목적</th></tr>
 <tr><td>계정</td><td>앱이 자동으로 만드는 익명 계정 식별자, 이름(닉네임), 프로필 색</td><td>이용자 구분, 그룹 친구에게 이름 표시</td></tr>
-<tr><td>계정 연결 (선택)</td><td>Apple 또는 Google 계정 연결을 선택한 경우: 그 회사가 전달하는 계정 식별자와 이메일(Apple에서 이메일 가리기를 고르면 Apple의 중계 주소). Google은 이름·프로필 사진 주소도 함께 전달하지만 앱에서 쓰지 않습니다</td><td>폰을 바꾸거나 앱을 다시 설치해도 같은 계정을 되찾기 위함</td></tr>
+<tr><td>계정 연결 (선택)</td><td>Apple 또는 Google 계정 연결을 선택한 경우: 그 회사가 전달하는 계정 식별자와 이메일(Apple에서 이메일 가리기를 고르면 Apple의 중계 주소). Google은 이름·프로필 사진 주소도 함께 전달하지만 앱에서 쓰지 않습니다. Apple 계정을 연결한 경우에는 Apple이 발급한 갱신용 토큰(refresh token)과 로그인에 쓴 앱 식별자(client id)도 서버 전용 저장소에 보관합니다(앱과 다른 이용자는 읽을 수 없음)</td><td>폰을 바꾸거나 앱을 다시 설치해도 같은 계정을 되찾기 위함. Apple 갱신용 토큰은 계정을 삭제할 때 Apple 쪽 연결을 끊는 데에만 사용</td></tr>
 <tr><td>설정</td><td>'나 깨워도 됨' 여부, 허용 시간대, 알람음 선택, 내 알람(시각·요일·이름·알람음·미션 난이도)</td><td>허용한 시간에만 깨우기 전달, 폰을 바꿔도 내 알람 유지</td></tr>
 <tr><td>그룹</td><td>참여한 그룹, 그룹 이름·색, 초대 코드, 깨우기 허용 관계</td><td>그룹 운영, 서로 깨울 수 있는 사람 확인</td></tr>
 <tr><td>깨우기 기록</td><td>보낸 사람·받는 사람, 보낸 시각, 울린 시각, 일어난 시각, 상태, 다시 알림(5분만) 횟수</td><td>알람 전달·결과 표시, 순위 화면</td></tr>
 <tr><td>깨우기 처리 기록</td><td>깨우기마다 상태가 바뀐 시각, 바꾼 쪽(보낸 사람·받는 사람·서버), 푸시 전달 결과(보낸 개수·성공 개수·기기 종류·응답 코드). 이름과 녹음 내용은 담지 않습니다</td><td>"알람이 안 울렸다"는 신고와 오류의 원인 확인</td></tr>
 <tr><td>녹음 음성·사진</td><td>이용자가 직접 녹음한 10초 이내 음성 파일(무료 3초), 이용자가 보관함에 담은 녹음. Wake+의 '영상에서 소리 가져오기'를 쓴 경우 영상에서 뽑은 소리 파일과, 친구에게 보내면서 '사진 포함'을 고른 때에 한해 영상의 장면 한 장(JPEG), '영상 보내기'를 고른 때에 한해 소리 없는 5초 이내의 짧은 영상 조각(mp4). 원본 영상 파일 자체는 서버로 보내지 않으며, 내 알람에 붙인 영상 조각은 이 폰 안에만 저장됩니다</td><td>받는 사람의 알람 소리로 재생, 받는 사람의 알람 화면에 사진·짧은 영상 표시, 신고·분쟁 대응</td></tr>
-<tr><td>기기 정보</td><td>푸시 알림 토큰, 운영체제 종류·주버전, 앱 식별자, 이 앱 전용 기기 식별값, 이 폰으로 로그인한 시각</td><td>알람 푸시 전달, 기기별 알람 방식 선택, 한 계정을 한 폰에서만 쓰게 함(다른 폰에서 로그인하면 이전 폰은 로그아웃)</td></tr>
+<tr><td>기기 정보</td><td>푸시 알림 토큰, 운영체제 종류·주버전, 앱 식별자, 이 앱 전용 기기 식별값, 이 폰으로 로그인한 시각, 앱 언어</td><td>알람 푸시 전달, 기기별 알람 방식 선택, 받는 폰의 언어로 알림 문구 보내기, 한 계정을 한 폰에서만 쓰게 함(다른 폰에서 로그인하면 이전 폰은 로그아웃)</td></tr>
 <tr><td>기기 시간대</td><td>폰의 시간대 이름(예: Asia/Seoul)의 <b>가장 최근 값 하나</b>. 반복 알람을 만들 때는 만든 사람의 시간대 이름이 예비값으로 함께 저장됩니다. 시간대 이름으로 대략 어느 지역에 있는지 짐작할 수 있지만, 위치(GPS)나 정확한 장소는 수집하지 않습니다</td><td>허용 시간대(조용한 시간)를 받는 사람의 현지 시각으로 판단하고, 친구가 건 반복 알람을 받는 사람 폰의 현지 시각에 울리게 함(여행 등으로 시간대가 바뀌면 새 시간대를 따릅니다)</td></tr>
 <tr><td>구매·이용권</td><td>Wake+ 구독의 스토어 거래 식별자(App Store 거래 번호 또는 Google Play 구매 토큰)·상품·만료일·결제 환경, 이용권 종류·만료일, 쿠폰 사용 기록(쿠폰·기기 식별값)</td><td>Wake+ 이용 권한 확인, 구독 복원, 쿠폰 중복 사용 방지</td></tr>
 <tr><td>무료 혜택 기록</td><td>무료 녹음 깨우기를 쓴 시각, 쓴 폰의 식별값을 되돌릴 수 없게 바꾼 값</td><td>무료 녹음 깨우기(처음 10번)를 계정·폰마다 한 번만 주기 위함</td></tr>
 <tr><td>신고·차단</td><td>신고한 사람·대상, 신고 사유, 관련 깨우기, 차단 관계</td><td>괴롭힘 방지, 신고 처리</td></tr>
 <tr><td>문의</td><td>문의 내용, 이름(닉네임), 앱 버전·기기 종류, 이용자가 답변을 받으려고 직접 적은 이메일(선택)</td><td>문의 확인과 답변</td></tr>
 <tr><td>문의 진단 (선택)</td><td>문의할 때 이용자가 스위치를 직접 켠 경우에만: 최근 7일간 이 폰의 알람 동작 기록(알람을 걸고·울리고·끈 시각과 동작 종류)과 앱·폰의 기본 정보. 이름과 녹음은 담지 않습니다. 스위치를 켜지 않으면 이 기록은 이 폰 안에만 남고 서버로 보내지 않습니다(최근 7일·최대 200건만 보관)</td><td>알람이 안 울린 원인 확인과 답변</td></tr>
-<tr><td>보안·오류</td><td>초대 코드 입력 실패 시각, 오류 진단 기록</td><td>무차별 입력 차단, 오류 수정</td></tr>
+<tr><td>접속 기록 (자동 수집)</td><td>접속 IP 주소, 기기·앱 종류(user agent). 로그인 세션 정보와 서버 요청 기록(로그)에 자동으로 남습니다</td><td>보안, 부정 이용·무차별 입력 방지, 장애 확인</td></tr>
+<tr><td>보안·오류</td><td>초대 코드 입력 실패 시각, 쿠폰 입력 실패 시각, 오류 진단 기록</td><td>무차별 입력 차단, 오류 수정</td></tr>
 </table>
 <p>전화번호, 위치(GPS 등 장소 정보), 연락처, 광고 식별자는 수집하지 않습니다. 위 '기기 시간대'는 폰이 알려 주는 시간대 이름만 처리하며 이동 경로나 이동 기록을 만들지 않습니다. 이메일은 이용자가 계정 연결을 선택했거나, 문의할 때 답변을 받으려고 직접 적은 경우에만 처리합니다. 마이크는 이용자가 녹음 버튼을 누를 때만 사용합니다.</p>
 
 <h2>2. 보유 기간과 파기</h2>
 <table>
 <tr><th>항목</th><th>보유 기간</th></tr>
-<tr><td>계정·설정·그룹·깨우기 기록·기기 정보·구매·이용권</td><td>앱의 <b>내 설정 → 데이터 삭제하고 나가기</b>를 누르면 즉시 삭제 (구독 자체는 결제한 스토어 — App Store 또는 Google Play — 의 계정 설정에서 따로 해지해야 합니다)</td></tr>
+<tr><td>계정·설정·그룹·깨우기 기록·기기 정보·구매·이용권</td><td>앱의 <b>내 설정 → 데이터 삭제하고 나가기</b>를 누르면 즉시 삭제 (구독 자체는 결제한 스토어 — App Store 또는 Google Play — 의 계정 설정에서 따로 해지해야 합니다). 계정은 이용자가 삭제할 때까지 보관하며, 오래 쓰지 않았다는 이유만으로 자동 삭제하거나 따로 분리해 보관하지 않습니다. 앱을 이미 지웠다면 <a href="support.html#delete">계정·데이터 삭제 안내</a>의 이메일 요청으로 삭제할 수 있습니다</td></tr>
+<tr><td>Apple 연결 갱신용 토큰</td><td>계정이 있는 동안 서버 전용 저장소에 보관. 계정을 삭제하면 먼저 Apple에 연결 해제(토큰 폐기)를 요청한 뒤 계정과 함께 삭제합니다. Apple 쪽 폐기가 실패해도 계정 삭제는 진행되며 이 토큰도 함께 삭제됩니다</td></tr>
 <tr><td>녹음 음성·사진</td><td>(사진도 같은 기간·방식으로 삭제합니다. <b>친구에게 보낸 짧은 영상 조각은 예외</b>로, 받는 사람의 폰이 내려받으면 곧(10분 안팎) 서버에서 삭제하고, 내려받지 못해도 보낸 지 <b>24시간</b>이 지나면 삭제합니다. 켜진 반복 알람에 붙인 영상은 반복을 끌 때까지, 처리 중인 신고에 걸린 영상은 처리가 끝날 때까지 남깁니다) 받는 사람의 알람으로 울린 뒤에는 Wake+ 이용자만 <b>2주</b> 동안 다시 듣거나 보관함에 담을 수 있고, 그 뒤에는 신고·분쟁 대응 목적으로만 보관하다가 보낸 날부터 <b>30일</b>이 지나면 서버에서 완전히 삭제. 처리 중인 신고의 녹음은 처리가 끝날 때까지. 반복 알람에 쓰는 녹음은 반복을 끌 때까지. 보관함에 담은 녹음은 이용자가 지울 때까지. 계정을 삭제하면 2일 이내 삭제</td></tr>
 <tr><td>기기 시간대</td><td>계정이 있는 동안 <b>최신 값 하나만</b> 보관합니다. 시간대가 바뀌면 이전 값은 새 값으로 덮어써 지워지며 이동 기록은 남기지 않습니다. 계정을 삭제하면 즉시 삭제</td></tr>
 <tr><td>무료 혜택 기록</td><td>계정이 있는 동안 보관. 계정을 삭제해도 같은 폰에서 무료 혜택을 다시 받지 못하도록 <b>쓴 날부터 1년</b> 동안 보관한 뒤 삭제 (계정과의 연결은 즉시 끊김)</td></tr>
-<tr><td>초대 코드 입력 실패 기록</td><td>1일 후 삭제</td></tr>
-<tr><td>오류 진단 기록</td><td>30일 후 삭제</td></tr>
-<tr><td>신고 기록</td><td>처리 완료 후 1년 (분쟁 대응). 이후 삭제</td></tr>
+<tr><td>초대 코드·쿠폰 입력 실패 기록</td><td>1일 후 삭제</td></tr>
+<tr><td>오류 진단 기록</td><td>생긴 날부터 30일 후 삭제. 계정을 삭제해도 바로 지우지 않고 30일 동안 남을 수 있습니다(계정 식별자 포함)</td></tr>
+<tr><td>접속 IP·기기 종류</td><td>로그인 세션 정보는 계정을 삭제하면 함께 삭제됩니다. 로그인 감사 기록과 요청 로그는 호스팅 업체(Supabase 등)의 로그 보관 정책에 따라 보관되며, 운영자가 따로 기간을 정하지 않습니다. 계정을 삭제해도 그 기간 동안 남을 수 있습니다</td></tr>
+<tr><td>신고 기록</td><td>처리 완료 후 1년 (분쟁 대응). 이후 삭제. 아직 처리하지 않은 신고는 처리가 끝날 때까지 보관합니다. 신고한 사람이나 신고받은 사람이 계정을 삭제해도 신고 사유·내용은 위 기간 동안 남으며, 그 계정과의 연결만 끊어집니다</td></tr>
 <tr><td>문의</td><td>접수 후 <b>1년</b>이 지나면 삭제. 계정을 삭제하면 계정과의 연결이 끊깁니다</td></tr>
 <tr><td>깨우기 처리 기록</td><td>생긴 날부터 <b>30일</b>이 지나면 삭제 (그 깨우기나 계정을 지우면 함께 삭제)</td></tr>
 <tr><td>문의 진단</td><td>접수 후 <b>30일</b>이 지나면 삭제 (문의 내용 자체는 위와 같이 1년)</td></tr>
@@ -61,17 +64,20 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <h2>4. 처리 위탁과 국외 이전</h2>
 <p>서비스 운영을 위해 아래 업체에 처리를 맡기며, 일부는 국외에서 처리됩니다.</p>
 <table>
-<tr><th>받는 자 (국가)</th><th>이전 항목</th><th>목적</th><th>이전 시점·방법</th><th>보유 기간</th></tr>
-<tr><td>Supabase, Inc. (미국)<br>저장 위치: 대한민국 서울 리전</td><td>1번의 모든 항목</td><td>데이터베이스·파일 저장, 로그인</td><td>앱 이용 시 네트워크로 수시 전송</td><td>2번의 보유 기간과 같음</td></tr>
-<tr><td>Google LLC (미국)<br>Firebase Cloud Messaging</td><td>안드로이드 푸시 토큰, 앱 설치 식별자, 알람 내용(보낸 사람 이름)</td><td>안드로이드 알람 푸시 전달</td><td>깨우기를 보낼 때 전송</td><td>전달 후 Google 정책에 따라 삭제</td></tr>
-<tr><td>Apple Inc. (미국)<br>Apple Push Notification service</td><td>iOS 푸시 토큰, 알람 내용(보낸 사람 이름)</td><td>iPhone 알람 푸시 전달</td><td>깨우기를 보낼 때 전송</td><td>전달 후 Apple 정책에 따라 삭제</td></tr>
+<tr><th>받는 자 (국가)</th><th>이전 항목</th><th>목적</th><th>이전 시점·방법</th><th>보유 기간</th><th>개인정보 문의처 (이전받는 자)</th></tr>
+<tr><td>Supabase, Inc. (미국)<br>저장 위치: 대한민국 서울 리전</td><td>1번의 모든 항목(접속 IP·기기 종류 포함)</td><td>데이터베이스·파일 저장, 로그인</td><td>앱 이용 시 네트워크로 수시 전송</td><td>2번의 보유 기간과 같음</td><td><a href="mailto:privacy@supabase.com">privacy@supabase.com</a></td></tr>
+<tr><td>Google LLC (미국)<br>Firebase Cloud Messaging</td><td>안드로이드 푸시 토큰, 앱 설치 식별자, 알람 내용(보낸 사람 이름, 알람 시각, 녹음·사진·영상을 내려받는 <b>10분 동안만 유효한 서명된 임시 링크</b>, 일회용 확인 키)</td><td>안드로이드 알람 푸시 전달</td><td>깨우기를 보낼 때 전송</td><td>전달 후 Google 정책에 따라 삭제</td><td><a href="https://support.google.com/policies?p=privpol_privts">support.google.com/policies?p=privpol_privts</a></td></tr>
+<tr><td>Apple Inc. (미국)<br>Apple Push Notification service</td><td>iOS 푸시 토큰, 알람 내용(보낸 사람 이름, 알람 시각, 녹음·사진·영상을 내려받는 <b>10분 동안만 유효한 서명된 임시 링크</b>, 일회용 확인 키)</td><td>iPhone 알람 푸시 전달</td><td>깨우기를 보낼 때 전송</td><td>전달 후 Apple 정책에 따라 삭제</td><td><a href="https://www.apple.com/legal/privacy/contact/">apple.com/legal/privacy/contact</a></td></tr>
+<tr><td>Apple Inc. (미국)<br>Sign in with Apple (appleid.apple.com)</td><td>Apple 연결 시 받은 인증 코드(authorization code), 갱신용 토큰(refresh token), 로그인에 쓴 앱 식별자(client id)</td><td>Apple 계정 연결 확인(인증 코드를 토큰으로 교환), 계정 삭제 시 Apple 쪽 연결 해제(토큰 폐기)</td><td>Apple 계정을 연결할 때, 계정을 삭제할 때 서버가 전송</td><td>Apple 정책에 따름</td><td><a href="https://www.apple.com/legal/privacy/contact/">apple.com/legal/privacy/contact</a></td></tr>
+<tr><td>Google LLC (미국)<br>Google Play Developer API (oauth2.googleapis.com)</td><td>Google Play 구독의 구매 토큰, 상품 식별자</td><td>Google Play 구독 검증·갱신·해지 확인, 구매 승인 처리</td><td>구독을 구매·복원할 때와 Google의 구독 알림을 받을 때 서버가 전송</td><td>Google 정책에 따름</td><td><a href="https://support.google.com/policies?p=privpol_privts">support.google.com/policies?p=privpol_privts</a></td></tr>
 </table>
-<p>국외 이전을 원하지 않으면 계정을 삭제하면 됩니다. 다만 이 경우 서비스를 이용할 수 없습니다.</p>
+<p>Apple 또는 Google 계정 연결은 이용자가 직접 선택할 때만 진행되며, 그 로그인 화면은 Apple 또는 Google이 운영합니다(Wake는 그 화면에 입력한 비밀번호를 받지 않습니다). 안드로이드에서는 Apple 로그인이 브라우저 탭에서 진행되고, Apple이 로그인 결과를 Wake 서버의 주소(apple-callback)로 돌려주면 서버는 아무것도 저장하지 않고 그대로 앱에 넘기기만 합니다.</p>
+<p>국외 이전을 원하지 않으면 계정 연결과 Wake+ 구독을 쓰지 않으면 되며(둘 다 선택 사항), 푸시·저장 등 서비스 운영에 필요한 이전을 원하지 않으면 계정을 삭제하면 됩니다. 다만 이 경우 서비스를 이용할 수 없습니다.</p>
 
 <h2>5. 이용자의 권리와 행사 방법</h2>
 <ul>
 <li><b>열람·정정</b>: 앱의 내 설정에서 이름·색·설정을 바로 확인하고 바꿀 수 있습니다.</li>
-<li><b>삭제·처리정지</b>: 내 설정 → 데이터 삭제하고 나가기를 누르면 즉시 삭제됩니다(무료 혜택 기록은 2번에 적은 대로 계정과의 연결만 끊고 1년 보관). '나 깨워도 됨'을 끄면 깨우기 수신이 멈춥니다.</li>
+<li><b>삭제·처리정지</b>: 내 설정 → 데이터 삭제하고 나가기를 누르면 즉시 삭제됩니다(무료 혜택 기록은 2번에 적은 대로 계정과의 연결만 끊고 1년 보관). 앱을 이미 지웠거나 쓸 수 없다면 <a href="support.html#delete">계정·데이터 삭제 안내</a>의 이메일 요청 방법을 따라 주세요. '나 깨워도 됨'을 끄면 깨우기 수신이 멈춥니다.</li>
 <li>그 밖의 요청은 아래 연락처로 보내주시면 10일 이내 답변드립니다.</li>
 </ul>
 
@@ -79,7 +85,8 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <ul>
 <li>모든 통신 암호화(HTTPS/TLS)</li>
 <li>데이터베이스 행 단위 접근 제한: 본인과 같은 그룹 사람만 필요한 정보에 접근</li>
-<li>녹음 파일은 비공개 저장소에 두고, 관련된 사람만 받을 수 있게 제한</li>
+<li>녹음·사진·영상 파일은 비공개 저장소에 두고, 관련된 사람만 받을 수 있게 제한(푸시에 담기는 내려받기 링크는 10분만 유효)</li>
+<li>Apple 연결 갱신용 토큰은 서버 전용 저장소에만 두며 앱과 다른 이용자는 읽을 수 없고, 계정 삭제 때 Apple 쪽 연결을 끊는 용도로만 사용</li>
 <li>서버 키는 서버에만 보관하고 앱에 넣지 않음</li>
 <li>깨우기 처리 기록과 문의 진단은 이용자의 앱에서 읽거나 고칠 수 없고 운영자만 확인</li>
 <li>기기 시간대와 기기 식별값은 같은 그룹 사람을 포함해 다른 이용자의 앱에서 읽을 수 없고, 서버에서 알람 시각 계산에만 사용</li>
@@ -87,7 +94,7 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 </ul>
 
 <h2>7. 자동 수집 장치</h2>
-<p>쿠키, 광고 추적, 분석 도구를 사용하지 않습니다.</p>
+<p>쿠키, 광고 추적, 분석 도구를 사용하지 않습니다. 다만 로그인과 서버 요청 과정에서 접속 IP 주소와 기기·앱 종류가 서버와 호스팅 업체의 로그에 자동으로 남습니다(1번 '접속 기록'). 보안과 부정 이용 방지가 목적입니다.</p>
 
 <h2>8. 만 14세 미만 아동</h2>
 <p>Wake는 만 14세 이상만 이용할 수 있습니다. 만 14세 미만 아동의 개인정보를 알게 되면 지체 없이 삭제합니다.</p>
@@ -110,34 +117,40 @@ Wake는 친구가 나를 깨울 수 있는 알람 앱입니다. 회원가입 없
 <p>내용이 바뀌면 시행 7일 전에 이 페이지와 앱으로 알립니다. 이용자에게 불리한 변경은 30일 전에 알립니다.</p>
 <ul>
 <li>2026년 9월 29일 공고: 녹음 보관 7일 → 30일(다시 듣기·보관함 담기는 Wake+ 2주까지 — 보관 기간 연장은 공고 30일 뒤부터 적용), 계정 삭제 시 녹음 2일 이내 삭제, 내 알람을 계정에 저장, 구매·이용권, 무료 혜택 기록 항목 추가, 기기 정보에 이 앱 전용 기기 식별값 명시, 녹음 길이 변경(10초·무료 3초). 추가 항목은 Wake+ 판매와 무료 이용 한도가 시작되는 날부터 적용합니다.</li>
-<li>2026년 10월 31일 공고: 깨우기 처리 기록(상태가 바뀐 시각·바꾼 쪽·푸시 전달 결과, 30일 보관)과 문의 진단(선택 — 문의할 때 직접 켠 경우에만 최근 7일 알람 동작 기록을 함께 보냄, 30일 보관), 기기 시간대(폰의 시간대 이름 최신 값 하나, 알람 시각 계산용, 계정 삭제 시 삭제), 영상에서 가져온 소리와 함께 보내는 장면 사진(녹음과 같은 기간 보관)·소리 없는 짧은 영상 조각(받는 폰이 받으면 곧 삭제, 최대 24시간) 항목 추가. 추가 항목은 공고 7일 뒤인 2026년 11월 7일부터 적용합니다. Google 계정 연결(선택) 항목 추가.</li>
+<li>2026년 10월 31일 공고: 깨우기 처리 기록(상태가 바뀐 시각·바꾼 쪽·푸시 전달 결과, 30일 보관)과 문의 진단(선택 — 문의할 때 직접 켠 경우에만 최근 7일 알람 동작 기록을 함께 보냄, 30일 보관), 기기 시간대(폰의 시간대 이름 최신 값 하나, 알람 시각 계산용, 계정 삭제 시 삭제), 영상에서 가져온 소리와 함께 보내는 장면 사진(녹음과 같은 기간 보관)·소리 없는 짧은 영상 조각(받는 폰이 받으면 곧 삭제, 최대 24시간) 항목 추가. 추가 항목은 공고 7일 뒤인 2026년 11월 7일부터 적용합니다.</li>
+<li>2026년 11월 3일 공고·시행(앱 출시 전이라 공고 기간 없이 함께 게시): Apple·Google 계정 연결(선택) 항목, Apple 연결 시 서버 전용으로 보관하는 갱신용 토큰(계정 삭제 때 Apple 쪽 연결을 끊는 용도, 계정과 함께 삭제), 접속 IP·기기 종류(로그인 세션·요청 기록), 앱 언어, 쿠폰 입력 실패 기록(1일) 항목 추가. 처리 위탁·국외 이전에 Apple 로그인 서버와 Google Play 결제 확인 서버, 이전받는 자의 개인정보 문의처, 푸시에 담기는 10분짜리 임시 링크 명시. 계정 보관 기준(삭제할 때까지), 신고 기록과 오류 진단 기록이 계정 삭제 뒤 남는 방식 명시, 계정·데이터 삭제 안내 페이지 추가.</li>
 </ul>
 
 <h2 id="en">Privacy Policy (English)</h2>
-<p class="meta">Effective September 18, 2026 · Revision posted October 31, 2026 · Operator: PAPE</p>
+<p class="meta">Effective September 18, 2026 · Revision posted October 31, 2026 · Operator: PAPE · Last updated November 3, 2026</p>
 <p>Wake is an alarm app that lets friends wake you up. You start with just a name; there is no sign-up.</p>
 <h3>What we process and why</h3>
 <ul>
 <li><b>Account</b>: an anonymous account ID, your display name and color, to identify you and show your name to group members.</li>
+<li><b>Account linking (optional)</b>: only if you choose to link your Apple or Google account, the account ID and email that company sends (Apple may give a relay address; Google also sends your name and profile photo address, which we don't use), so you can recover the same account on a new phone. For Apple we also keep the refresh token Apple issues and the app (client) ID used, in a server-only table that the app and other users cannot read, solely to revoke the Apple link when you delete your account.</li>
 <li><b>Settings</b>: whether you can be woken, allowed hours, alarm sound, and your own alarms (time, days, label, sound, mission level) so they follow you to a new phone.</li>
 <li><b>Groups and wakes</b>: groups you joined, invite codes, who may wake whom, and wake history (who, when, rang, woke, snoozes).</li>
 <li><b>Wake processing record</b>: for each wake, when its status changed, who changed it (sender, receiver, or our server), and the push delivery result. It does not include names or recording contents. We use it to find the cause when someone reports that an alarm did not ring, and to fix errors.</li>
 <li><b>Voice recordings and photos</b>: clips up to 10 seconds (3 seconds on free) you record, played as the receiver's alarm sound. If you use Wake+ "sound from video", the audio extracted from your video and, only when you choose "include photo" while sending to a friend, one still frame (JPEG) shown on the receiver's alarm screen, or, only when you choose "send video", a silent clip of up to 5 seconds (mp4) that plays on the receiver's alarm screen. The clip is deleted from our server shortly after the receiver's phone downloads it (at the latest 24 hours after sending; kept only while a repeating alarm that uses it is on, or while a report about it is open). The original video file itself is never uploaded; a video clip you attach to your own alarm stays on your phone.</li>
 <li><b>Purchases</b>: for Wake+, the store transaction ID (App Store transaction ID or Google Play purchase token), product, expiry and environment, your entitlement type and expiry, and coupon redemptions (coupon and device ID), to grant and restore Wake+ and prevent coupon reuse. Deleted with your account; cancel the subscription itself in the store you paid with (App Store or Google Play).</li>
-<li><b>Device</b>: push token, OS type and major version, app identifier, an app-specific device ID, and when you signed in on that phone, to deliver alarms and keep each account on one phone at a time (signing in on another phone signs the previous one out).</li>
+<li><b>Device</b>: push token, OS type and major version, app identifier, an app-specific device ID, when you signed in on that phone, and the app language, to deliver alarms, show the alarm text in the receiver's language, and keep each account on one phone at a time (signing in on another phone signs the previous one out).</li>
 <li><b>Device time zone</b>: the name of your phone's time zone (for example Asia/Seoul), only the latest value. When you create a repeat alarm for a friend, your own time zone name is also stored as a fallback. We use it to judge allowed hours in the receiver's local time and to ring friend-set repeat alarms at the receiver's local time, following the phone when you travel. A time zone name hints at a rough region, but we do not collect GPS location or keep a travel history. Other users, including group members, cannot see it. It is deleted when you delete your account; a new value overwrites the old one.</li>
 <li><b>Free-plan usage</b>: when you used free voice wakes and a one-way transformed value of that phone's device ID, so the first 10 free voice wakes are given once per account and once per phone.</li>
-<li><b>Reports and blocks</b>, failed invite-code attempts, and error diagnostics, for safety and fixing bugs.</li>
+<li><b>Access records (collected automatically)</b>: IP address and device/app type (user agent) in login sessions and server request logs, for security, abuse prevention, and troubleshooting.</li>
+<li><b>Reports and blocks</b>, failed invite-code and coupon attempts, and error diagnostics, for safety and fixing bugs.</li>
 <li><b>Inquiry diagnostics (optional)</b>: only if you switch it on yourself while contacting us in the app: the last 7 days of alarm activity records from your phone (when alarms were set, rang, or stopped, and what kind of action it was), plus basic app and phone information. No names and no recordings. If you leave it off, these records stay on your phone (last 7 days, up to 200 entries) and are never sent to us.</li>
 </ul>
-<p>Added October 31, 2026: optional Google account linking, the wake processing record and inquiry diagnostics, the device time zone, and the still photo or short silent video clip that can accompany audio imported from a video. They apply from November 7, 2026 (7 days after this notice).</p>
+<p>Added October 31, 2026: the wake processing record and inquiry diagnostics, the device time zone, and the still photo or short silent video clip that can accompany audio imported from a video. They apply from November 7, 2026 (7 days after this notice).</p>
+<p>Posted and effective November 3, 2026 (before launch, so with no waiting period): optional Apple and Google account linking; the Apple refresh token kept server-side only to revoke the Apple link when you delete your account; IP address and device/app type in login sessions and request logs; app language; failed coupon attempts (kept 1 day); Apple's Sign in with Apple servers and Google's Play Developer API added as recipients, with their privacy contacts; the 10-minute signed download links carried in pushes; and clarified retention for idle accounts, reports and error diagnostics.</p>
 <p>We do not collect phone numbers, location (GPS or place data), contacts, or advertising IDs; the time zone above is only the name your phone reports. Email is processed only if you choose to link your Apple ID (Apple may provide a relay address) or Google account (Google also sends your name and profile photo address, which we don't use) or type it into an in-app inquiry to get a reply (inquiries are deleted after 1 year). The microphone is used only while you record.</p>
 <h3>Retention</h3>
-<p>Tap <b>Settings → Delete my data and leave</b> to delete your account data immediately. Photos sent with a recording follow the same schedule as the recording. Your time zone is kept only while your account exists. After a recording rings as the receiver's alarm, Wake+ members can replay it or save it to their library for 2 weeks; after that it is kept only for handling reports and disputes and is permanently deleted from our servers 30 days after sending (recordings under an open report are kept until it is resolved, recordings used by an active repeat alarm until it is turned off, and recordings you save to your library until you delete them). If you delete your account, your recordings are deleted within 2 days. Failed invite attempts are kept 1 day, error diagnostics 30 days, wake processing records 30 days (or until you delete the wake or your account), inquiry diagnostics 30 days after we receive the inquiry (the inquiry text itself is kept 1 year), and resolved reports 1 year. Free-plan usage records are kept while your account exists; after you delete your account they are unlinked from it immediately and kept for up to 1 year from use, so the same phone cannot claim the free voice wakes again.</p>
+<p>Tap <b>Settings → Delete my data and leave</b> to delete your account data immediately (if you have already removed the app, see <a href="support.html#delete-en">Delete your account and data</a>). Accounts are kept until you delete them; we have no rule that deletes or archives an account just because it is idle. Photos sent with a recording follow the same schedule as the recording. Your time zone is kept only while your account exists. After a recording rings as the receiver's alarm, Wake+ members can replay it or save it to their library for 2 weeks; after that it is kept only for handling reports and disputes and is permanently deleted from our servers 30 days after sending (recordings under an open report are kept until it is resolved, recordings used by an active repeat alarm until it is turned off, and recordings you save to your library until you delete them). If you delete your account, your recordings are deleted within 2 days. Failed invite attempts are kept 1 day, error diagnostics 30 days, wake processing records 30 days (or until you delete the wake or your account), inquiry diagnostics 30 days after we receive the inquiry (the inquiry text itself is kept 1 year), failed coupon attempts 1 day, and resolved reports 1 year (open reports until they are handled; if the reporter or the reported person deletes their account, the report text stays for that period and only the link to the account is cut). Error diagnostics are not erased the moment you delete your account; they stay up to 30 days from when they were written. The Apple refresh token is kept only while your account exists: when you delete the account we ask Apple to revoke it first, and it is deleted with the account even if Apple's revocation fails. Login session records (IP address and device type) are deleted with your account; login audit records and request logs are kept by our hosting provider under its own log retention (we set no separate period) and may remain for that time after deletion. Free-plan usage records are kept while your account exists; after you delete your account they are unlinked from it immediately and kept for up to 1 year from use, so the same phone cannot claim the free voice wakes again.</p>
 <h3>Sharing and processors</h3>
-<p>We do not sell or share your data. Group members can see your name, color, wake counts and times, and hear recordings (and see photos) sent to them. They cannot see your time zone or device ID. We use Supabase, Inc. (data stored in the Seoul region), Google Firebase Cloud Messaging, and Apple Push Notification service to run the service; the latter two receive your push token and the alarm content (sender name).</p>
+<p>We do not sell or share your data. Group members can see your name, color, wake counts and times, and hear recordings (and see photos) sent to them. They cannot see your time zone or device ID. We use these processors to run the service. <b>Supabase, Inc.</b> (US company; your data is stored in its Seoul region; privacy contact <a href="mailto:privacy@supabase.com">privacy@supabase.com</a>) stores the data and handles sign-in. Providers in the United States also receive the items below: <b>Google Firebase Cloud Messaging</b> (Android) and <b>Apple Push Notification service</b> (iPhone) receive your push token and the alarm content (sender name, alarm time, and a signed link that is valid for only 10 minutes for downloading the voice, photo, or video); <b>Apple (appleid.apple.com)</b> receives the authorization code, refresh token, and client ID when you link or delete an Apple-linked account; <b>Google Play Developer API (oauth2.googleapis.com)</b> receives the purchase token and product ID to verify Google Play subscriptions. Privacy contacts: Apple <a href="https://www.apple.com/legal/privacy/contact/">apple.com/legal/privacy/contact</a>, Google <a href="https://support.google.com/policies?p=privpol_privts">support.google.com/policies?p=privpol_privts</a>. Linking an Apple or Google account is your choice, and the Apple or Google sign-in screen is run by that company. On Android, Apple sign-in runs in a browser tab and Apple returns the result through our server address (apple-callback), which only forwards it to the app without storing it.</p>
 <h3>Your rights</h3>
-<p>You can view and change your data in the app, turn off being woken, or delete everything. For other requests, email <a href="mailto:wake.official.kr@gmail.com">wake.official.kr@gmail.com</a>. Wake is for people aged 14 and over. We use no cookies, tracking, or analytics.</p>
+<p>You can view and change your data in the app, turn off being woken, or delete everything. For deletion steps, including for people who have already removed the app, see <a href="support.html#delete-en">Delete your account and data</a>. For other requests, email <a href="mailto:wake.official.kr@gmail.com">wake.official.kr@gmail.com</a>. Wake is for people aged 14 and over. We use no cookies, tracking, or analytics beyond the access records above.</p>
+<h3>Privacy officer</h3>
+<p>PAPE operations team (privacy officer): <a href="mailto:wake.official.kr@gmail.com">wake.official.kr@gmail.com</a>.</p>
 </main>
 </body>
 </html>
