@@ -15,3 +15,11 @@ a { color:var(--accent); }
 .lang { float:right; font-size:14px; }
 ul, ol { padding-left:22px; }
 @media (max-width:520px) { th, td { padding:8px 6px; font-size:13px; } }
+html:lang(ja) body { font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Hiragino Kaku Gothic ProN","Noto Sans JP","Yu Gothic",sans-serif; }
+html:lang(zh-Hans) body { font-family:-apple-system,BlinkMacSystemFont,"PingFang SC","Noto Sans SC","Microsoft YaHei",sans-serif; }
+html:lang(zh-Hant) body { font-family:-apple-system,BlinkMacSystemFont,"PingFang TC","Noto Sans TC","Microsoft JhengHei",sans-serif; }
+.note { color:var(--muted); font-size:13px; line-height:1.6; margin:0 0 20px; padding-left:12px; border-left:2px solid var(--line); }
+.langnav { color:var(--muted); font-size:13px; line-height:1.9; margin:0 0 18px; }
+.langnav a { color:var(--muted); }
+.langnav b { color:var(--fg); font-weight:700; }
+.langnav.foot { margin:36px 0 0; padding-top:14px; border-top:1px solid var(--line); }
